@@ -4,12 +4,12 @@ body {
   background-color: #000; 
   color: #fff;           
   font-family: "Integral cf", sans-serif;
-  background-image: url('mali.jpg'); 
+  background-image: url('batman2.jpg'); 
   background-size: cover;    
   background-position: top; 
   background-repeat: no-repeat;
   transition: background-color 0.5s ease;
-  overflow-x: hidden; /* Verhindert horizontalen Overflow */
+  overflow-x: hidden;
 }
 
 body.darkened {
@@ -97,13 +97,13 @@ header {
 
 .video-grid {
   display: flex;
-  flex-direction: column; /* Zeigt die Videos untereinander an */
+  flex-direction: column;
   gap: 20px;
   width: 100%;
   justify-items: center;
   margin-top: 10px;
-  overflow-y: auto; /* Ermöglicht vertikales Scrollen */
-  max-height: 80vh; /* Begrenzt die maximale Höhe, sodass man scrollen kann */
+  overflow-y: auto;
+  max-height: 80vh; 
 }
 
 .video-teil {
@@ -119,8 +119,8 @@ header {
 }
 
 .video-teil video {
-  width: 45%; /* Reduziert die Größe der Videos */
-  max-width: 80%; /* Verhindert, dass das Video über die maximalen Bildschirmgrößen hinausgeht */
+  width: 45%; 
+  max-width: 80%; 
   height: auto; 
   transition: all 0.3s ease;
   border-radius: 15px;
@@ -195,40 +195,40 @@ header {
   margin-top: 5px;
 }
 
-/* Mobile Optimierungen */
+
 @media (max-width: 700px) {
   .titel {
-      font-size: 1.5em; /* Verkleinert den Titel auf mobilen Geräten */
+      font-size: 1.5em; 
   }
 
   .untertitel {
-      font-size: 1.2em; /* Verkleinert den Untertitel */
+      font-size: 1.2em; 
   }
 
   .login-container input, .login-container button {
-      width: 80%; /* Vergrößert Eingabefelder auf mobilen Geräten */
+      width: 80%; 
   }
 
   .video-teil video {
-      width: 10%; /* Skaliert Videos noch mehr auf mobilen Geräten */
+      width: 10%; 
   }
 
   .video-grid {
-      grid-template-columns: 1fr; /* Stellt sicher, dass auf kleinen Geräten nur eine Spalte verwendet wird */
+      grid-template-columns: 1fr; 
       gap: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .titel {
-      font-size: 1.2em; /* Noch kleinerer Titel auf sehr kleinen Geräten */
+      font-size: 1.2em; 
   }
 
   .untertitel {
-      font-size: 1em; /* Noch kleinerer Untertitel */
+      font-size: 1em;
   }
 
   .panel-video p {
-      font-size: 0.8em; /* Kleinere Textgröße in Panels auf mobilen Geräten */
+      font-size: 0.8em;
   }
 }
